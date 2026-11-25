@@ -1,0 +1,34 @@
+{
+  "name": "playwright-ai-qa-template",
+  "version": "1.0.0",
+  "description": "Production-style Playwright + TypeScript test suite with AI-agent workflows for test generation, review and flaky-test triage.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": "Nelson Ceballos",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium --project=api --project=tooling",
+    "test:ui": "playwright test --project=chromium --project=firefox --project=webkit",
+    "test:api": "playwright test --project=api",
+    "report": "playwright show-report",
+    "flaky-report": "tsx scripts/flaky-report.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.10",
+    "eslint": "^10.15.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-playwright": "^2.12.2",
+    "prettier": "^3.10.1",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.74.0"
+  }
+}
