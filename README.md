@@ -99,7 +99,7 @@ I help startups get reliable test automation in place quickly:
   foundation from scratch, with CI and AI-agent workflows included.
 - **Monthly retainer:** ongoing test development, maintenance and flaky-test triage.
 
-Contact: open an issue or reach me on LinkedIn.
+Contact: open an issue or reach me on [LinkedIn](https://www.linkedin.com/in/nelson-ceballos-2021/).
 
 ## License
 

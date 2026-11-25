@@ -32,6 +32,6 @@ npm run flaky-report -- reports
 - **Migración o setup:** de Cypress o Selenium a Playwright, o QA automation desde cero.
 - **Abono mensual:** desarrollo y mantenimiento de tests y triage de flaky tests.
 
-Contacto: abrí un issue o escribime por LinkedIn.
+Contacto: abrí un issue o escribime por [LinkedIn](https://www.linkedin.com/in/nelson-ceballos-2021/).
 
 Más detalle en el [README en inglés](../README.md).
