@@ -1,0 +1,60 @@
+{
+  "suites": [
+    {
+      "title": "ui/shop.spec.ts",
+      "file": "ui/shop.spec.ts",
+      "specs": [],
+      "suites": [
+        {
+          "title": "Shop – checkout",
+          "file": "ui/shop.spec.ts",
+          "specs": [
+            {
+              "title": "completes a purchase",
+              "file": "ui/shop.spec.ts",
+              "tests": [
+                {
+                  "projectName": "chromium",
+                  "status": "flaky",
+                  "results": [
+                    {
+                      "status": "failed",
+                      "retry": 0,
+                      "duration": 5000,
+                      "error": {
+                        "message": "\u001b[31mTimeout 7000ms exceeded\u001b[39m\nwaiting for locator"
+                      }
+                    },
+                    { "status": "passed", "retry": 1, "duration": 3000 }
+                  ]
+                },
+                {
+                  "projectName": "firefox",
+                  "status": "expected",
+                  "results": [{ "status": "passed", "retry": 0, "duration": 3100 }]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ui/todo.spec.ts",
+      "file": "ui/todo.spec.ts",
+      "specs": [
+        {
+          "title": "adds items",
+          "file": "ui/todo.spec.ts",
+          "tests": [
+            {
+              "projectName": "chromium",
+              "status": "expected",
+              "results": [{ "status": "passed", "retry": 0, "duration": 900 }]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

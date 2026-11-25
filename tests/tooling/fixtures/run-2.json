@@ -1,0 +1,71 @@
+{
+  "suites": [
+    {
+      "title": "ui/shop.spec.ts",
+      "file": "ui/shop.spec.ts",
+      "suites": [
+        {
+          "title": "Shop – checkout",
+          "file": "ui/shop.spec.ts",
+          "specs": [
+            {
+              "title": "completes a purchase",
+              "file": "ui/shop.spec.ts",
+              "tests": [
+                {
+                  "projectName": "chromium",
+                  "status": "flaky",
+                  "results": [
+                    {
+                      "status": "timedOut",
+                      "retry": 0,
+                      "duration": 30000,
+                      "error": { "message": "Test timeout of 30000ms exceeded." }
+                    },
+                    {
+                      "status": "failed",
+                      "retry": 1,
+                      "duration": 4000,
+                      "error": { "message": "Error: expect(locator).toHaveText" }
+                    },
+                    { "status": "passed", "retry": 2, "duration": 3000 }
+                  ]
+                },
+                {
+                  "projectName": "firefox",
+                  "status": "expected",
+                  "results": [{ "status": "passed", "retry": 0, "duration": 3100 }]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ui/todo.spec.ts",
+      "file": "ui/todo.spec.ts",
+      "specs": [
+        {
+          "title": "adds items",
+          "file": "ui/todo.spec.ts",
+          "tests": [
+            {
+              "projectName": "chromium",
+              "status": "flaky",
+              "results": [
+                {
+                  "status": "failed",
+                  "retry": 0,
+                  "duration": 900,
+                  "error": { "message": "Error: strict mode violation" }
+                },
+                { "status": "passed", "retry": 1, "duration": 800 }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
