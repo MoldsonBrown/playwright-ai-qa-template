@@ -1,0 +1,12 @@
+---
+description: Playwright + TypeScript test conventions for this repo
+globs: ["tests/**/*.ts", "src/**/*.ts"]
+alwaysApply: false
+---
+
+- Follow `AGENTS.md`. Workflows and prompts are in `agents/`.
+- Use fixtures from `src/fixtures` (`import { test, expect } from '../../src/fixtures'`), never raw `@playwright/test` in UI/API specs.
+- Locators: `getByRole` > `getByLabel`/`getByPlaceholder` > `getByTestId` > `data-*`. Define them in Page Objects only.
+- Never use `waitForTimeout`, `networkidle`, `force: true`, or extra retries/timeouts to make a test pass.
+- Web-first assertions only: `await expect(locator).toHaveText(...)`.
+- Before finishing: `npm run lint && npm run typecheck && npm run test:chromium`.
